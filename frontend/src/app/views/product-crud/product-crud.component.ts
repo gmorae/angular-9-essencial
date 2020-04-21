@@ -19,4 +19,8 @@ export class ProductCrudComponent implements OnInit {
     this._router.navigate(['/create'])
   }
 
+  read(): void {
+    this._router.navigate(['/read'])
+  }
+
 }

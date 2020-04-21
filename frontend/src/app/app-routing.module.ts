@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { CreateComponent } from './components/products/create/create.component';
+import { ReadComponent } from './components/products/read/read.component';
+import { ProductResolve } from './resolve/products.resolve';
 
 
 const routes: Routes = [
@@ -17,6 +19,13 @@ const routes: Routes = [
   {
     path: 'create',
     component: CreateComponent
+  },
+  {
+    path: 'read',
+    component: ReadComponent,
+    resolve: {
+      products: ProductResolve
+    }
   }
 ];
 
