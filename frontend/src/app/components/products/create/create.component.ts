@@ -10,9 +10,9 @@ import { ProductsModel } from 'src/app/models/products.model';
 })
 export class CreateComponent implements OnInit {
   product: ProductsModel = {
-    name: "Iphone 8",
-    price: 2500,
-    image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR3jAZy6iFXjCalP9-ZTFAWIXkEtm6V-I4qcmEfxdnueyIf-ffRljYcJ4V9XSN5orId3k-ODz6ENfQSzi6PXVkZNNyoDVxa&usqp=CAE"
+    name: "",
+    price: null,
+    image: ""
   }
   constructor(
     private _router: Router,

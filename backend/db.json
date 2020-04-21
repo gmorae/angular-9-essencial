@@ -1,16 +1,22 @@
 {
-    "products":[
-        {
-            "id": 1,
-            "name": "Iphone 11",
-            "price": 5999.99,
-            "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTsogz-2qiwlEG5ggoF8oBOM5IrGDEwJqTwv9lA_AUzOoNWZLkxE1d2S3hebGjwhh3LU0JzvYSYxY4&usqp=CAc"
-        },
-        {
-            "id": 2,
-            "name":"Iphone X",
-            "price": 4500,
-            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTjoGIWEqjY8niYCCEyVUQuJRY8FWiaz7XY59W0r4Cl42KyxBq3AG2Q1MroqDfBCYczVoytiE7XAQ&usqp=CAc"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 11",
+      "price": 5999.99,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTsogz-2qiwlEG5ggoF8oBOM5IrGDEwJqTwv9lA_AUzOoNWZLkxE1d2S3hebGjwhh3LU0JzvYSYxY4&usqp=CAc"
+    },
+    {
+      "id": 2,
+      "name": "Iphone X",
+      "price": 4500,
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTjoGIWEqjY8niYCCEyVUQuJRY8FWiaz7XY59W0r4Cl42KyxBq3AG2Q1MroqDfBCYczVoytiE7XAQ&usqp=CAc"
+    },
+    {
+      "name": "iphone 8",
+      "price": "5000",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR3jAZy6iFXjCalP9-ZTFAWIXkEtm6V-I4qcmEfxdnueyIf-ffRljYcJ4V9XSN5orId3k-ODz6ENfQSzi6PXVkZNNyoDVxa&usqp=CAE",
+      "id": 3
+    }
+  ]
 }
