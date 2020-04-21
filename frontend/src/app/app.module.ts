@@ -11,6 +11,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component'
 import { ProductCrudComponent } from './views/product-crud/product-crud.component'
+import { CreateComponent } from './components/products/create/create.component';
 
 // Import Material angular
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -25,7 +26,8 @@ import { MatCardModule } from '@angular/material/card';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent
+    ProductCrudComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
