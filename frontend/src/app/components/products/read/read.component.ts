@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsModel } from 'src/app/models/products.model';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
@@ -14,7 +14,8 @@ import {MatSort} from '@angular/material/sort';
 export class ReadComponent implements OnInit {
 
   constructor(
-    private _activatedRoute: ActivatedRoute
+    private _activatedRoute: ActivatedRoute,
+    private _router: Router
   ) { }
 
   products: ProductsModel[] = this._activatedRoute.snapshot.data.products
@@ -32,6 +33,10 @@ export class ReadComponent implements OnInit {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  cancel(): void {
+    this._router.navigate(['/products'])
   }
 
 }

@@ -11,7 +11,6 @@ import { FormsModule } from '@angular/forms'
 // Components
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component'
 import { ProductCrudComponent } from './views/product-crud/product-crud.component'
 import { CreateComponent } from './components/products/create/create.component';
@@ -35,7 +34,6 @@ import { MatTableModule } from '@angular/material/table'
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent,
     HomeComponent,
     ProductCrudComponent,
     CreateComponent,

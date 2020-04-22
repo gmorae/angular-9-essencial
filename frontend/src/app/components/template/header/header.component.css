@@ -9,6 +9,24 @@
     text-decoration: none;
 }
 
+.header span {
+    margin-left: 5%;
+}
+
 .header span a i {
     padding-right: 5px;
+}
+
+.side-nav {
+    width: 200px;
+}
+
+.side-nav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: #fff;
+    color: #000;
 }
