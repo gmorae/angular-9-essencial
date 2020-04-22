@@ -17,6 +17,18 @@
       "price": "5000",
       "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR3jAZy6iFXjCalP9-ZTFAWIXkEtm6V-I4qcmEfxdnueyIf-ffRljYcJ4V9XSN5orId3k-ODz6ENfQSzi6PXVkZNNyoDVxa&usqp=CAE",
       "id": 3
+    },
+    {
+      "name": "iphone 6",
+      "price": "1000",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTz7aSmVyXpHI-1LzsXMjT4rf140To3NuUgXq_rgt70cdWfPI1RCsdsbLREXJ95ULoF37yQy19elP4&usqp=CAc",
+      "id": 4
+    },
+    {
+      "name": "iphone 7",
+      "price": "1800",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSXHsphiWoSeLcxV7G6Z_sPuskyxQMkoch5ZJADaNTwT6dHhppASteOzR6jIlB8F5Quj_s5sSJ850I&usqp=CAc",
+      "id": 5
     }
   ]
 }

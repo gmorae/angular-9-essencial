@@ -26,7 +26,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { ReadComponent } from './components/products/read/read.component'
-
+import { MatPaginatorModule } from '@angular/material/paginator'
+import { MatSortModule } from '@angular/material/sort'
+import { MatTableModule } from '@angular/material/table'
 
 @NgModule({
   declarations: [
@@ -53,7 +55,10 @@ import { ReadComponent } from './components/products/read/read.component'
     MatButtonModule,
     MatSnackBarModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
