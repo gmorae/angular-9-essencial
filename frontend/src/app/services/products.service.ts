@@ -42,6 +42,10 @@ export class ProductsService {
     return this._http.put(`${environment.api}/products/${product.id}`, product);
   }
 
+  deleteProduct(id: number) {
+    return this._http.delete(`${environment.api}/products/${id}`);
+  }
+
   showMessage(msg: string): void {
     this._snackBar.open(msg, 'X', {
       duration: 3000,

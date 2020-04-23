@@ -14,6 +14,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent } from './views/home/home.component'
 import { ProductCrudComponent } from './views/product-crud/product-crud.component'
 import { CreateComponent } from './components/products/create/create.component';
+import { UpdateComponent } from './components/products/update/update.component';
+import { DeleteComponent } from './components/products/delete/delete.component';
 
 // Import Material angular
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -28,7 +30,6 @@ import { ReadComponent } from './components/products/read/read.component'
 import { MatPaginatorModule } from '@angular/material/paginator'
 import { MatSortModule } from '@angular/material/sort'
 import { MatTableModule } from '@angular/material/table';
-import { UpdateComponent } from './components/products/update/update.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UpdateComponent } from './components/products/update/update.component';
     ProductCrudComponent,
     CreateComponent,
     ReadComponent,
-    UpdateComponent
+    UpdateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

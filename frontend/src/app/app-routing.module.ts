@@ -6,6 +6,7 @@ import { CreateComponent } from './components/products/create/create.component';
 import { ReadComponent } from './components/products/read/read.component';
 import { ProductResolve } from './resolve/products.resolve';
 import { UpdateComponent } from './components/products/update/update.component';
+import { DeleteComponent } from './components/products/delete/delete.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'edit/:id',
     component: UpdateComponent
+  },
+  {
+    path: 'delete/:id',
+    component: DeleteComponent
   }
 ];
 

@@ -15,7 +15,7 @@ export class ReadComponent implements OnInit {
 
   constructor(
     private _activatedRoute: ActivatedRoute,
-    private _router: Router
+    private _router: Router,
   ) { }
 
   products: ProductsModel[] = this._activatedRoute.snapshot.data.products
