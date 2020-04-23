@@ -27,7 +27,8 @@ import { MatInputModule } from '@angular/material/input';
 import { ReadComponent } from './components/products/read/read.component'
 import { MatPaginatorModule } from '@angular/material/paginator'
 import { MatSortModule } from '@angular/material/sort'
-import { MatTableModule } from '@angular/material/table'
+import { MatTableModule } from '@angular/material/table';
+import { UpdateComponent } from './components/products/update/update.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MatTableModule } from '@angular/material/table'
     HomeComponent,
     ProductCrudComponent,
     CreateComponent,
-    ReadComponent
+    ReadComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

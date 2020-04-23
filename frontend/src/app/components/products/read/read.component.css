@@ -18,3 +18,12 @@ img {
 button {
     margin-top: 2%;
 }
+
+.edit {
+    color: #d9cd26;
+}
+
+.delete {
+    margin-left: 20px;
+    color: #e35e6b
+}

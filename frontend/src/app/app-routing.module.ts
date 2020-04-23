@@ -5,6 +5,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { CreateComponent } from './components/products/create/create.component';
 import { ReadComponent } from './components/products/read/read.component';
 import { ProductResolve } from './resolve/products.resolve';
+import { UpdateComponent } from './components/products/update/update.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,10 @@ const routes: Routes = [
     resolve: {
       products: ProductResolve
     }
+  },
+  {
+    path: 'edit/:id',
+    component: UpdateComponent
   }
 ];
 

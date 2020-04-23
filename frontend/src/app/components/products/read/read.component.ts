@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsModel } from 'src/app/models/products.model';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import {MatSort} from '@angular/material/sort';
+import { MatSort } from '@angular/material/sort';
 
 
 @Component({
@@ -19,11 +19,11 @@ export class ReadComponent implements OnInit {
   ) { }
 
   products: ProductsModel[] = this._activatedRoute.snapshot.data.products
-  displayedColumns: string[] = ['name', 'image', 'price'];
+  displayedColumns: string[] = ['name', 'image', 'price', 'action'];
   dataSource = new MatTableDataSource<ProductsModel>(this.products);
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
@@ -32,7 +32,7 @@ export class ReadComponent implements OnInit {
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    this.dataSource.filter = filterValue.trim().toLowerCase();    
   }
 
   cancel(): void {
