@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HeaderService } from 'src/app/services/header.service';
 
 @Component({
   selector: 'app-product-crud',
@@ -9,8 +10,14 @@ import { Router } from '@angular/router';
 export class ProductCrudComponent implements OnInit {
 
   constructor(
-    private _router: Router
-  ) { }
+    private _router: Router,
+    private _serviceHeader: HeaderService
+    ) {
+    _serviceHeader.headerData = {
+      title: 'Todos os produtos', 
+      icon: 'shopping_basket'
+    }
+  }
 
   ngOnInit(): void {
   }

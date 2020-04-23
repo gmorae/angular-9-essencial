@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductsService } from 'src/app/services/products.service';
 import { ProductsModel } from 'src/app/models/products.model';
+import { HeaderService } from 'src/app/services/header.service';
 
 @Component({
   selector: 'app-create',
@@ -16,8 +17,14 @@ export class CreateComponent implements OnInit {
   }
   constructor(
     private _router: Router,
-    private _service: ProductsService
-  ) { }
+    private _service: ProductsService,
+    private _serviceHeader: HeaderService
+  ) { 
+    _serviceHeader.headerData = {
+      title: 'Cadastrar produto', 
+      icon: 'add'
+    }
+  }
 
   ngOnInit(): void {
   }

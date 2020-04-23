@@ -4,6 +4,7 @@ import { ProductsModel } from 'src/app/models/products.model';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
+import { HeaderService } from 'src/app/services/header.service';
 
 
 @Component({
@@ -16,7 +17,13 @@ export class ReadComponent implements OnInit {
   constructor(
     private _activatedRoute: ActivatedRoute,
     private _router: Router,
-  ) { }
+    private _serviceHeader: HeaderService
+    ) { 
+      _serviceHeader.headerData = {
+        title: 'Lista de produtos', 
+        icon: 'list'
+      }
+    }
 
   products: ProductsModel[] = this._activatedRoute.snapshot.data.products
   displayedColumns: string[] = ['name', 'image', 'price', 'action'];
